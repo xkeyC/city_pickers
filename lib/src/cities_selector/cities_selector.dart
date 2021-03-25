@@ -107,7 +107,7 @@ class _CitiesSelectorState extends State<CitiesSelector> {
   double _topOffstageTop = 0;
 
   /// 城市列表数组
-  List<Point> _cities = new List();
+  List<Point> _cities = [];
   ScrollController _scrollController;
 
   /// 用这个key 去标记一个item,用来在初始化后. 获取期高度
@@ -412,7 +412,8 @@ class _CitiesSelectorState extends State<CitiesSelector> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
-        resizeToAvoidBottomPadding: false,
+
+        ///resizeToAvoidBottomPadding: false,
         appBar: AppBar(
             title: Text(
           widget.title,
